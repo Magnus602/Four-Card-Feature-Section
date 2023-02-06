@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  padding: 0 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0 30px 0;
+}
+
+.title-1 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%); 
+ }
+
+.title-2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin: 0 0 15px 0; 
+}
+
+.title-p {
+  font-size: 1rem;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+  max-width: 500px;
+  margin: 0 auto; 
+  padding-bottom: 2.5rem;
+}
+/* ----------------------------- */
+/* Covers all of the cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* Styles on and around each card */
+.card {
+  padding: 30px;
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 250px;
+  margin: 2rem auto;
+
+  box-shadow: 0 4px 8px 0px hsla(229, 6%, 66%, .5);
+  transition: 0.3s;
+}
+
+/* Hovering adds a deeper shadow */
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(76,78,97,.5);
+}
+/* ------------------------------- */
+
+/* Inside each card */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);  
+}
+
+.card-p {
+  font-size: 12px;
+  font-weight: 200; 
+  color: hsl(229, 6%, 66%);
+  padding-top: 10px;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;  
+}
+/* ---------------------*/
+
+/* individual card mods */
+
+.card-super {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  margin: 0px;
+}
+
+.card-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+ }
+
+.card-karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card-calc {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  margin: 0;
+}
+/* ------------------------------------------ */
+
+/* For desktop view */
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.25rem;
+    margin: 0 auto;
+ }
+ 
+  .cards {
+    flex-direction: row;
+  
+  }
+  
+  .card-super {
+    margin-right: 2rem;
+  }
+
+  .card-calc {
+    margin-left: 2rem;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+.attribution { 
+    font-size: 11px;
+  }
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
